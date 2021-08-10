@@ -1,0 +1,1411 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@Ignore"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 12,
+        "name": "User validate Create connect Me after successfully getting Login token",
+        "description": "",
+        "id": "validating-create-connect-me-program-type-from-10s-scm-api;user-validate-create-connect-me-after-successfully-getting-login-token;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28931340200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Valid LoginID and PassWord and AccountNumber and get the get the Login Token",
+            "match": {
+              "location": "StepDefinitionLoginApi.user_enters_valid_loginid_and_password_and_accountnumber_and_get_the_get_the_login_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3879001700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters details for Connect me \"SetConnectMeRequest\" and \"POST\" the request for API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SetConnectMeRequest",
+                  "offset": 36
+                },
+                {
+                  "val": "POST",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitionConnectMeApi.user_enters_details_for_Connect_me_and_the_request_for_API(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 863700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates API call got success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefinationsGenerics.validateResponseStatusCode(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Sanity"
+          },
+          {
+            "line": 4,
+            "name": "@Regression"
+          },
+          {
+            "line": 4,
+            "name": "@ConnectMe"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Create Connect Me program type from 10S SCM API",
+    "description": "",
+    "id": "validating-create-connect-me-program-type-from-10s-scm-api",
+    "keyword": "Feature",
+    "uri": "ConnectMe/ConnectMe.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@Ignore"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User validate user with userName and Password and",
+        "description": "",
+        "id": "validating-login-api-with-userid-and-password;user-validate-user-with-username-and-password-and",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8594400400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Valid LoginID and PassWord and AccountNumber and get the get the Login Token",
+            "match": {
+              "location": "StepDefinitionLoginApi.user_enters_valid_loginid_and_password_and_accountnumber_and_get_the_get_the_login_token()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Login"
+          },
+          {
+            "line": 4,
+            "name": "@Sanity"
+          },
+          {
+            "line": 4,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Login Api with UserID and Password",
+    "description": "",
+    "id": "validating-login-api-with-userid-and-password",
+    "keyword": "Feature",
+    "uri": "Login/Login.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@Ignore"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Verify if User recieves the Username from the LoginHelp API",
+        "description": "",
+        "id": "validating-the-loginhelp-api-functionality-works;verify-if-user-recieves-the-username-from-the-loginhelp-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3676239600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters Valid emailid and AccountNumber and get the get the prelogin Token",
+            "match": {
+              "location": "StepDefinitionLoginHelpApi.user_enters_valid_emailid_and_accountnumber_and_get_the_get_the_prelogin_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2360822400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user calls LoginHelp \"GetLoginHelp\" API with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetLoginHelp",
+                  "offset": 22
+                },
+                {
+                  "val": "POST",
+                  "offset": 46
+                }
+              ],
+              "location": "StepDefinitionLoginHelpApi.user_calls_LoginHelp_API_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 656700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user validates API call got success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefinationsGenerics.validateResponseStatusCode(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62550600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "\"Message\" in response body is \"If an account exists for nikhil.jain@mailinator.com, you will get an email having your username. If it doesnot arrive, be sure to check your spam folder.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Message",
+                  "offset": 1
+                },
+                {
+                  "val": "If an account exists for nikhil.jain@mailinator.com, you will get an email having your username. If it doesnot arrive, be sure to check your spam folder.",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinationsGenerics.checkMessageResponseBody(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@LoginHelp"
+          },
+          {
+            "line": 4,
+            "name": "@ForgotUsername"
+          },
+          {
+            "line": 4,
+            "name": "@Sanity"
+          },
+          {
+            "line": 4,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating the LoginHelp API Functionality works",
+    "description": "",
+    "id": "validating-the-loginhelp-api-functionality-works",
+    "keyword": "Feature",
+    "uri": "Login/LoginHelp.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#@Ignore"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Verify if User gets logout from the application",
+        "description": "",
+        "id": "validating-user-is-able-to-logout-from-the-application;verify-if-user-gets-logout-from-the-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11389516000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters Valid LoginID and PassWord and AccountNumber and get the get the Login Token",
+            "match": {
+              "location": "StepDefinitionLoginApi.user_enters_valid_loginid_and_password_and_accountnumber_and_get_the_get_the_login_token()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5141923900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls \"GetLogOut\" API with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GetLogOut",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinitionLogoutApi.user_calls_API_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 539300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates API call got success with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefinationsGenerics.validateResponseStatusCode(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 124461300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"Message\" in response body is \"Successful!!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Message",
+                  "offset": 1
+                },
+                {
+                  "val": "Successful!!",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinationsGenerics.checkMessageResponseBody(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Logout"
+          },
+          {
+            "line": 4,
+            "name": "@Sanity"
+          },
+          {
+            "line": 4,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating User is able to logout from the application",
+    "description": "",
+    "id": "validating-user-is-able-to-logout-from-the-application",
+    "keyword": "Feature",
+    "uri": "Login/Logout.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "User should be able to add outage and validate outage inserted successfully.",
+        "description": "",
+        "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.;user-should-be-able-to-add-outage-and-validate-outage-inserted-successfully.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 480511300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User create outage with details \"Power Outage\" and \"Power Failure\" and \"Outage due to windstorm.\" and \"2021-08-31T11:17:32\" and \"2021-09-01T11:17:55\" and \"0\" and \"1\" and \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Power Outage",
+                  "offset": 33
+                },
+                {
+                  "val": "Power Failure",
+                  "offset": 52
+                },
+                {
+                  "val": "Outage due to windstorm.",
+                  "offset": 72
+                },
+                {
+                  "val": "2021-08-31T11:17:32",
+                  "offset": 103
+                },
+                {
+                  "val": "2021-09-01T11:17:55",
+                  "offset": 129
+                },
+                {
+                  "val": "0",
+                  "offset": 155
+                },
+                {
+                  "val": "1",
+                  "offset": 163
+                },
+                {
+                  "val": "0",
+                  "offset": 171
+                }
+              ],
+              "location": "StepDefinitionOutage.userCreateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50728829800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User calls  \"AddUpdateOutage\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddUpdateOutage",
+                  "offset": 13
+                },
+                {
+                  "val": "POST",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitionOutage.userCallsWithHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95613600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "API call got success for creating outage with status code \"200\" and \"Outage inserted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 59
+                },
+                {
+                  "val": "Outage inserted successfully",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinitionOutage.apiCallGotSuccessForCreatingOutageWithStatusCodeAnd(String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6967231900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Outage info get saved with details \"Power Outage\" and \"Power Failure\" and \"Outage due to windstorm.\" and \"2021-08-31T11:17:32\" and \"2021-09-01T11:17:55\" in database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Power Outage",
+                  "offset": 36
+                },
+                {
+                  "val": "Power Failure",
+                  "offset": 55
+                },
+                {
+                  "val": "Outage due to windstorm.",
+                  "offset": 75
+                },
+                {
+                  "val": "2021-08-31T11:17:32",
+                  "offset": 106
+                },
+                {
+                  "val": "2021-09-01T11:17:55",
+                  "offset": 132
+                }
+              ],
+              "location": "StepDefinitionOutage.outageInfoGetSavedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Outage"
+          },
+          {
+            "line": 6,
+            "name": "@Sanity"
+          },
+          {
+            "line": 6,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "User should be able to add outage and validate outage inserted successfully.",
+        "description": "",
+        "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.;user-should-be-able-to-add-outage-and-validate-outage-inserted-successfully.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 317451200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User create outage with details \"Water Outage\" and \"No Water\" and \"Outage due to water shortage.\" and \"2021-08-31T11:17:32\" and \"2021-09-01T11:17:55\" and \"1\" and \"2\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Water Outage",
+                  "offset": 33
+                },
+                {
+                  "val": "No Water",
+                  "offset": 52
+                },
+                {
+                  "val": "Outage due to water shortage.",
+                  "offset": 67
+                },
+                {
+                  "val": "2021-08-31T11:17:32",
+                  "offset": 103
+                },
+                {
+                  "val": "2021-09-01T11:17:55",
+                  "offset": 129
+                },
+                {
+                  "val": "1",
+                  "offset": 155
+                },
+                {
+                  "val": "2",
+                  "offset": 163
+                },
+                {
+                  "val": "1",
+                  "offset": 171
+                }
+              ],
+              "location": "StepDefinitionOutage.userCreateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9846384100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User calls  \"AddUpdateOutage\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddUpdateOutage",
+                  "offset": 13
+                },
+                {
+                  "val": "POST",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitionOutage.userCallsWithHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130341200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "API call got success for creating outage with status code \"200\" and \"Outage inserted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 59
+                },
+                {
+                  "val": "Outage inserted successfully",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinitionOutage.apiCallGotSuccessForCreatingOutageWithStatusCodeAnd(String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5302458200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Outage info get saved with details \"Water Outage\" and \"No Water\" and \"Outage due to water shortage.\" and \"2021-08-31T11:17:32\" and \"2021-09-01T11:17:55\" in database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Water Outage",
+                  "offset": 36
+                },
+                {
+                  "val": "No Water",
+                  "offset": 55
+                },
+                {
+                  "val": "Outage due to water shortage.",
+                  "offset": 70
+                },
+                {
+                  "val": "2021-08-31T11:17:32",
+                  "offset": 106
+                },
+                {
+                  "val": "2021-09-01T11:17:55",
+                  "offset": 132
+                }
+              ],
+              "location": "StepDefinitionOutage.outageInfoGetSavedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Outage"
+          },
+          {
+            "line": 6,
+            "name": "@Sanity"
+          },
+          {
+            "line": 6,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "User should be able to add outage and validate outage inserted successfully.",
+        "description": "",
+        "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.;user-should-be-able-to-add-outage-and-validate-outage-inserted-successfully.;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 161943800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User create outage with details \"Gas Outage\" and \"No Gas\" and \"Outage due to gas leakage.\" and \"2021-08-31T11:17:32\" and \"2021-09-01T11:17:55\" and \"0\" and \"3\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gas Outage",
+                  "offset": 33
+                },
+                {
+                  "val": "No Gas",
+                  "offset": 50
+                },
+                {
+                  "val": "Outage due to gas leakage.",
+                  "offset": 63
+                },
+                {
+                  "val": "2021-08-31T11:17:32",
+                  "offset": 96
+                },
+                {
+                  "val": "2021-09-01T11:17:55",
+                  "offset": 122
+                },
+                {
+                  "val": "0",
+                  "offset": 148
+                },
+                {
+                  "val": "3",
+                  "offset": 156
+                },
+                {
+                  "val": "1",
+                  "offset": 164
+                }
+              ],
+              "location": "StepDefinitionOutage.userCreateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5489846300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User calls  \"AddUpdateOutage\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddUpdateOutage",
+                  "offset": 13
+                },
+                {
+                  "val": "POST",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinitionOutage.userCallsWithHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147459200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "API call got success for creating outage with status code \"200\" and \"Outage inserted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 59
+                },
+                {
+                  "val": "Outage inserted successfully",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinitionOutage.apiCallGotSuccessForCreatingOutageWithStatusCodeAnd(String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5463912700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Outage info get saved with details \"Gas Outage\" and \"No Gas\" and \"Outage due to gas leakage.\" and \"2021-08-31T11:17:32\" and \"2021-09-01T11:17:55\" in database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gas Outage",
+                  "offset": 36
+                },
+                {
+                  "val": "No Gas",
+                  "offset": 53
+                },
+                {
+                  "val": "Outage due to gas leakage.",
+                  "offset": 66
+                },
+                {
+                  "val": "2021-08-31T11:17:32",
+                  "offset": 99
+                },
+                {
+                  "val": "2021-09-01T11:17:55",
+                  "offset": 125
+                }
+              ],
+              "location": "StepDefinitionOutage.outageInfoGetSavedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Outage"
+          },
+          {
+            "line": 6,
+            "name": "@Sanity"
+          },
+          {
+            "line": 6,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "User should be able to update outage and validate outage updated successfully.",
+        "description": "",
+        "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.;user-should-be-able-to-update-outage-and-validate-outage-updated-successfully.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1007180700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User update outage with details \"Power Outage 23455\" and \"Power Failure\" and \"Outage due to windstorm 23455\" and \"2020-09-26T13:36:55\" and \"2020-10-27T13:36:55\" and \"0\" and \"1\" and \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Power Outage 23455",
+                  "offset": 33
+                },
+                {
+                  "val": "Power Failure",
+                  "offset": 58
+                },
+                {
+                  "val": "Outage due to windstorm 23455",
+                  "offset": 78
+                },
+                {
+                  "val": "2020-09-26T13:36:55",
+                  "offset": 114
+                },
+                {
+                  "val": "2020-10-27T13:36:55",
+                  "offset": 140
+                },
+                {
+                  "val": "0",
+                  "offset": 166
+                },
+                {
+                  "val": "1",
+                  "offset": 174
+                },
+                {
+                  "val": "0",
+                  "offset": 182
+                }
+              ],
+              "location": "StepDefinitionOutage.userUpdateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12431939900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User calls \"AddUpdateOutage\" with the existing outage id and \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddUpdateOutage",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitionOutage.userCallsWithTheExistingOutageIdAndHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66468500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "API call got success for updating outage with status code \"200\" and \"Outage updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 59
+                },
+                {
+                  "val": "Outage updated successfully",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinitionOutage.apiCallGotSuccessForUpdatingOutageWithStatusCodeAnd(String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1950187200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Outage info get updated with details \"Power Outage 23455\" and \"Power Failure\" and \"Outage due to windstorm 23455\" and \"2020-09-26T13:36:55\" and \"2020-10-27T13:36:55\" in database.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Power Outage 23455",
+                  "offset": 38
+                },
+                {
+                  "val": "Power Failure",
+                  "offset": 63
+                },
+                {
+                  "val": "Outage due to windstorm 23455",
+                  "offset": 83
+                },
+                {
+                  "val": "2020-09-26T13:36:55",
+                  "offset": 119
+                },
+                {
+                  "val": "2020-10-27T13:36:55",
+                  "offset": 145
+                }
+              ],
+              "location": "StepDefinitionOutage.outageInfoGetUpdatedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Outage"
+          },
+          {
+            "line": 19,
+            "name": "@Sanity"
+          },
+          {
+            "line": 19,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "User should be able to update outage and validate outage updated successfully.",
+        "description": "",
+        "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.;user-should-be-able-to-update-outage-and-validate-outage-updated-successfully.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1030608400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User update outage with details \"Water Outage\" and \"Water Shortage\" and \"Outage due to water shortage\" and \"2020-09-26T13:36:55\" and \"2020-10-27T13:36:55\" and \"0\" and \"2\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Water Outage",
+                  "offset": 33
+                },
+                {
+                  "val": "Water Shortage",
+                  "offset": 52
+                },
+                {
+                  "val": "Outage due to water shortage",
+                  "offset": 73
+                },
+                {
+                  "val": "2020-09-26T13:36:55",
+                  "offset": 108
+                },
+                {
+                  "val": "2020-10-27T13:36:55",
+                  "offset": 134
+                },
+                {
+                  "val": "0",
+                  "offset": 160
+                },
+                {
+                  "val": "2",
+                  "offset": 168
+                },
+                {
+                  "val": "1",
+                  "offset": 176
+                }
+              ],
+              "location": "StepDefinitionOutage.userUpdateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12257721700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User calls \"AddUpdateOutage\" with the existing outage id and \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddUpdateOutage",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitionOutage.userCallsWithTheExistingOutageIdAndHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42435500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "API call got success for updating outage with status code \"200\" and \"Outage updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 59
+                },
+                {
+                  "val": "Outage updated successfully",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinitionOutage.apiCallGotSuccessForUpdatingOutageWithStatusCodeAnd(String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1208388800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Outage info get updated with details \"Water Outage\" and \"Water Shortage\" and \"Outage due to water shortage\" and \"2020-09-26T13:36:55\" and \"2020-10-27T13:36:55\" in database.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Water Outage",
+                  "offset": 38
+                },
+                {
+                  "val": "Water Shortage",
+                  "offset": 57
+                },
+                {
+                  "val": "Outage due to water shortage",
+                  "offset": 78
+                },
+                {
+                  "val": "2020-09-26T13:36:55",
+                  "offset": 113
+                },
+                {
+                  "val": "2020-10-27T13:36:55",
+                  "offset": 139
+                }
+              ],
+              "location": "StepDefinitionOutage.outageInfoGetUpdatedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Outage"
+          },
+          {
+            "line": 19,
+            "name": "@Sanity"
+          },
+          {
+            "line": 19,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "User should be able to update outage and validate outage updated successfully.",
+        "description": "",
+        "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.;user-should-be-able-to-update-outage-and-validate-outage-updated-successfully.;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1069452700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User update outage with details \"Gas Outage\" and \"Gas Shortage\" and \"Outage due to gas leakage\" and \"2020-09-26T13:36:55\" and \"2020-10-27T13:36:55\" and \"0\" and \"3\" and \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gas Outage",
+                  "offset": 33
+                },
+                {
+                  "val": "Gas Shortage",
+                  "offset": 50
+                },
+                {
+                  "val": "Outage due to gas leakage",
+                  "offset": 69
+                },
+                {
+                  "val": "2020-09-26T13:36:55",
+                  "offset": 101
+                },
+                {
+                  "val": "2020-10-27T13:36:55",
+                  "offset": 127
+                },
+                {
+                  "val": "0",
+                  "offset": 153
+                },
+                {
+                  "val": "3",
+                  "offset": 161
+                },
+                {
+                  "val": "1",
+                  "offset": 169
+                }
+              ],
+              "location": "StepDefinitionOutage.userUpdateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5508092100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User calls \"AddUpdateOutage\" with the existing outage id and \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddUpdateOutage",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinitionOutage.userCallsWithTheExistingOutageIdAndHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 49054400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "API call got success for updating outage with status code \"200\" and \"Outage updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 59
+                },
+                {
+                  "val": "Outage updated successfully",
+                  "offset": 69
+                }
+              ],
+              "location": "StepDefinitionOutage.apiCallGotSuccessForUpdatingOutageWithStatusCodeAnd(String,String)"
+            },
+            "matchedColumns": [
+              8,
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 900073700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Outage info get updated with details \"Gas Outage\" and \"Gas Shortage\" and \"Outage due to gas leakage\" and \"2020-09-26T13:36:55\" and \"2020-10-27T13:36:55\" in database.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gas Outage",
+                  "offset": 38
+                },
+                {
+                  "val": "Gas Shortage",
+                  "offset": 55
+                },
+                {
+                  "val": "Outage due to gas leakage",
+                  "offset": 74
+                },
+                {
+                  "val": "2020-09-26T13:36:55",
+                  "offset": 106
+                },
+                {
+                  "val": "2020-10-27T13:36:55",
+                  "offset": 132
+                }
+              ],
+              "location": "StepDefinitionOutage.outageInfoGetUpdatedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Outage"
+          },
+          {
+            "line": 19,
+            "name": "@Sanity"
+          },
+          {
+            "line": 19,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Add and update outage and validate if the outage inserted and updated successfully.",
+    "description": "",
+    "id": "add-and-update-outage-and-validate-if-the-outage-inserted-and-updated-successfully.",
+    "keyword": "Feature",
+    "uri": "Outage/Outage.feature"
+  }
+]

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SCM10SAPI</td>
+              <td>1</td>
+            <td>09 Aug 2021, 12:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">StepDefinationsGenerics.checkMessageResponseBody(String,String)</td>
+              <td>2</td>
+              <td class="duration" data-value="25293000">0.025</td>
+              <td class="duration" data-value="25293000">0.028</td>
+              <td class="duration" data-value="50586000">0.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinationsGenerics.validateResponseStatusCode(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="453433">0.000</td>
+              <td class="duration" data-value="453433">0.000</td>
+              <td class="duration" data-value="1360300">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionConnectMeApi.user_enters_details_for_Connect_me_and_the_request_for_API(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2055502800">2.055</td>
+              <td class="duration" data-value="2055502800">2.055</td>
+              <td class="duration" data-value="2055502800">2.055</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionLoginApi.user_enters_valid_loginid_and_password_and_accountnumber_and_get_the_get_the_login_token()</td>
+              <td>3</td>
+              <td class="duration" data-value="7327876433">7.327</td>
+              <td class="duration" data-value="7327876433">13.340</td>
+              <td class="duration" data-value="21983629300">21.983</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionLoginHelpApi.user_calls_LoginHelp_API_with_http_request(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1912665000">1.912</td>
+              <td class="duration" data-value="1912665000">1.912</td>
+              <td class="duration" data-value="1912665000">1.912</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionLoginHelpApi.user_enters_valid_emailid_and_accountnumber_and_get_the_get_the_prelogin_token()</td>
+              <td>1</td>
+              <td class="duration" data-value="1837117600">1.837</td>
+              <td class="duration" data-value="1837117600">1.837</td>
+              <td class="duration" data-value="1837117600">1.837</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionLogoutApi.user_calls_API_with_http_request(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2050691200">2.050</td>
+              <td class="duration" data-value="2050691200">2.050</td>
+              <td class="duration" data-value="2050691200">2.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.apiCallGotSuccessForCreatingOutageWithStatusCodeAnd(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="25189333">0.025</td>
+              <td class="duration" data-value="25189333">0.027</td>
+              <td class="duration" data-value="75568000">0.075</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.apiCallGotSuccessForUpdatingOutageWithStatusCodeAnd(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="26366033">0.026</td>
+              <td class="duration" data-value="26366033">0.035</td>
+              <td class="duration" data-value="79098100">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.outageInfoGetSavedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="4893990700">4.893</td>
+              <td class="duration" data-value="4893990700">4.987</td>
+              <td class="duration" data-value="14681972100">14.681</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.outageInfoGetUpdatedWithDetailsAndAndAndAndInDatabase(String,String,String,String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="821017100">0.821</td>
+              <td class="duration" data-value="821017100">0.851</td>
+              <td class="duration" data-value="2463051300">2.463</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.userCallsWithHttpRequest(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="3923418533">3.923</td>
+              <td class="duration" data-value="3923418533">4.302</td>
+              <td class="duration" data-value="11770255600">11.770</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.userCallsWithTheExistingOutageIdAndHttpRequest(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="3750544133">3.750</td>
+              <td class="duration" data-value="3750544133">4.002</td>
+              <td class="duration" data-value="11251632400">11.251</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.userCreateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)</td>
+              <td>3</td>
+              <td class="duration" data-value="13284200">0.013</td>
+              <td class="duration" data-value="13284200">0.017</td>
+              <td class="duration" data-value="39852600">0.039</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitionOutage.userUpdateOutageWithDetailsAndAndAndAndAndAndAnd(String,String,String,String,String,String,String,int)</td>
+              <td>3</td>
+              <td class="duration" data-value="886800866">0.886</td>
+              <td class="duration" data-value="886800866">0.946</td>
+              <td class="duration" data-value="2660402600">2.660</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>15</td>
+            <td>36</td>
+            <td class="duration">2.025</td>
+            <td class="duration">21.983</td>
+            <td class="duration">1:12.913</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="223541" started-at="2021-08-10T13:03:50Z" finished-at="2021-08-10T13:07:34Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@eec5a4a]" name="feature" class="runner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="223541" started-at="2021-08-10T13:03:50Z" finished-at="2021-08-10T13:07:34Z">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@eec5a4a]" name="setUpClass" is-config="true" duration-ms="29909" started-at="2021-08-10T18:33:50Z" finished-at="2021-08-10T18:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@eec5a4a]" name="feature" duration-ms="36032" started-at="2021-08-10T18:34:22Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-08-10T18:34:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating Create Connect Me program type from 10S SCM API]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@eec5a4a]" name="feature" duration-ms="8618" started-at="2021-08-10T18:34:58Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-08-10T18:35:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating Login Api with UserID and Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@eec5a4a]" name="feature" duration-ms="6263" started-at="2021-08-10T18:35:07Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-08-10T18:35:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating the LoginHelp API Functionality works]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@eec5a4a]" name="feature" duration-ms="16782" started-at="2021-08-10T18:35:13Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-08-10T18:35:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating User is able to logout from the application]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@eec5a4a]" name="feature" duration-ms="123071" started-at="2021-08-10T18:35:30Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-08-10T18:37:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Add and update outage and validate if the outage inserted and updated successfully.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@eec5a4a]" name="tearDownClass" is-config="true" duration-ms="208" started-at="2021-08-10T18:37:33Z" finished-at="2021-08-10T18:37:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Tag: @Sanity</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SCM10SAPI</td>
+              <td>1</td>
+            <td>09 Aug 2021, 12:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Sanity</td>
+                    <td      class="passed"    >36</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">36</td>
+
+          <td  class="passed"    >10</td>
+          <td >0</td>
+          <td class="total">10</td>
+
+          <td class="duration" data-value="72913384900">1:12.913</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_ConnectMe-ConnectMe-feature.html">Validating Create Connect Me program type from 10S SCM API</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+           <a href="report-tag_ConnectMe.html">@ConnectMe</a>
+      </div>
+
+  
+  <span class="lead-duration duration">15.397</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User validate Create connect Me after successfully getting Login token</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User enters Valid LoginID and PassWord and AccountNumber and get the get the Login Token</span>
+  
+  <span class="lead-duration duration">13.340</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User enters details for Connect me &quot;SetConnectMeRequest&quot; and &quot;POST&quot; the request for API</span>
+  
+  <span class="lead-duration duration">2.055</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates API call got success with status code &quot;200&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Login-Login-feature.html">Validating Login Api with UserID and Password</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Login.html">@Login</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">4.442</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">User validate user with userName and Password and</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User enters Valid LoginID and PassWord and AccountNumber and get the get the Login Token</span>
+  
+  <span class="lead-duration duration">4.442</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Login-LoginHelp-feature.html">Validating the LoginHelp API Functionality works</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_LoginHelp.html">@LoginHelp</a>
+           <a href="report-tag_ForgotUsername.html">@ForgotUsername</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.778</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify if User recieves the Username from the LoginHelp API</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User enters Valid emailid and AccountNumber and get the get the prelogin Token</span>
+  
+  <span class="lead-duration duration">1.837</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls LoginHelp &quot;GetLoginHelp&quot; API with &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">1.912</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates API call got success with status code &quot;200&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">&quot;Message&quot; in response body is &quot;If an account exists for nikhil.jain@mailinator.com, you will get an email having your username. If it doesnot arrive, be sure to check your spam folder.&quot;</span>
+  
+  <span class="lead-duration duration">0.028</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Login-Logout-feature.html">Validating User is able to logout from the application</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Logout.html">@Logout</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">6.273</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify if User gets logout from the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User enters Valid LoginID and PassWord and AccountNumber and get the get the Login Token</span>
+  
+  <span class="lead-duration duration">4.199</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user calls &quot;GetLogOut&quot; API with &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">2.050</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user validates API call got success with status code &quot;200&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">&quot;Message&quot; in response body is &quot;Successful!!&quot;</span>
+  
+  <span class="lead-duration duration">0.022</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Outage-Outage-feature.html">Add and update outage and validate if the outage inserted and updated successfully.</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Outage.html">@Outage</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">8.862</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User should be able to add outage and validate outage inserted successfully.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User create outage with details &quot;Power Outage&quot; and &quot;Power Failure&quot; and &quot;Outage due to windstorm.&quot; and &quot;2021-08-31T11:17:32&quot; and &quot;2021-09-01T11:17:55&quot; and &quot;0&quot; and &quot;1&quot; and &quot;0&quot;</span>
+  
+  <span class="lead-duration duration">0.012</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls  &quot;AddUpdateOutage&quot; with &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">3.836</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success for creating outage with status code &quot;200&quot; and &quot;Outage inserted successfully&quot;</span>
+  
+  <span class="lead-duration duration">0.025</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Outage info get saved with details &quot;Power Outage&quot; and &quot;Power Failure&quot; and &quot;Outage due to windstorm.&quot; and &quot;2021-08-31T11:17:32&quot; and &quot;2021-09-01T11:17:55&quot; in database</span>
+  
+  <span class="lead-duration duration">4.987</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Outage-Outage-feature.html">Add and update outage and validate if the outage inserted and updated successfully.</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Outage.html">@Outage</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">9.195</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User should be able to add outage and validate outage inserted successfully.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User create outage with details &quot;Water Outage&quot; and &quot;No Water&quot; and &quot;Outage due to water shortage.&quot; and &quot;2021-08-31T11:17:32&quot; and &quot;2021-09-01T11:17:55&quot; and &quot;1&quot; and &quot;2&quot; and &quot;1&quot;</span>
+  
+  <span class="lead-duration duration">0.017</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls  &quot;AddUpdateOutage&quot; with &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">4.302</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success for creating outage with status code &quot;200&quot; and &quot;Outage inserted successfully&quot;</span>
+  
+  <span class="lead-duration duration">0.027</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Outage info get saved with details &quot;Water Outage&quot; and &quot;No Water&quot; and &quot;Outage due to water shortage.&quot; and &quot;2021-08-31T11:17:32&quot; and &quot;2021-09-01T11:17:55&quot; in database</span>
+  
+  <span class="lead-duration duration">4.847</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Outage-Outage-feature.html">Add and update outage and validate if the outage inserted and updated successfully.</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Outage.html">@Outage</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">8.509</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User should be able to add outage and validate outage inserted successfully.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User create outage with details &quot;Gas Outage&quot; and &quot;No Gas&quot; and &quot;Outage due to gas leakage.&quot; and &quot;2021-08-31T11:17:32&quot; and &quot;2021-09-01T11:17:55&quot; and &quot;0&quot; and &quot;3&quot; and &quot;1&quot;</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls  &quot;AddUpdateOutage&quot; with &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">3.631</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success for creating outage with status code &quot;200&quot; and &quot;Outage inserted successfully&quot;</span>
+  
+  <span class="lead-duration duration">0.022</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Outage info get saved with details &quot;Gas Outage&quot; and &quot;No Gas&quot; and &quot;Outage due to gas leakage.&quot; and &quot;2021-08-31T11:17:32&quot; and &quot;2021-09-01T11:17:55&quot; in database</span>
+  
+  <span class="lead-duration duration">4.846</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Outage-Outage-feature.html">Add and update outage and validate if the outage inserted and updated successfully.</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Outage.html">@Outage</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">5.301</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User should be able to update outage and validate outage updated successfully.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User update outage with details &quot;Power Outage 23455&quot; and &quot;Power Failure&quot; and &quot;Outage due to windstorm 23455&quot; and &quot;2020-09-26T13:36:55&quot; and &quot;2020-10-27T13:36:55&quot; and &quot;0&quot; and &quot;1&quot; and &quot;0&quot;</span>
+  
+  <span class="lead-duration duration">0.850</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls &quot;AddUpdateOutage&quot; with the existing outage id and &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">3.577</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success for updating outage with status code &quot;200&quot; and &quot;Outage updated successfully&quot;</span>
+  
+  <span class="lead-duration duration">0.021</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Outage info get updated with details &quot;Power Outage 23455&quot; and &quot;Power Failure&quot; and &quot;Outage due to windstorm 23455&quot; and &quot;2020-09-26T13:36:55&quot; and &quot;2020-10-27T13:36:55&quot; in database.</span>
+  
+  <span class="lead-duration duration">0.851</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Outage-Outage-feature.html">Add and update outage and validate if the outage inserted and updated successfully.</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Outage.html">@Outage</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">5.448</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User should be able to update outage and validate outage updated successfully.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User update outage with details &quot;Water Outage&quot; and &quot;Water Shortage&quot; and &quot;Outage due to water shortage&quot; and &quot;2020-09-26T13:36:55&quot; and &quot;2020-10-27T13:36:55&quot; and &quot;0&quot; and &quot;2&quot; and &quot;1&quot;</span>
+  
+  <span class="lead-duration duration">0.946</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls &quot;AddUpdateOutage&quot; with the existing outage id and &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">3.671</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success for updating outage with status code &quot;200&quot; and &quot;Outage updated successfully&quot;</span>
+  
+  <span class="lead-duration duration">0.021</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Outage info get updated with details &quot;Water Outage&quot; and &quot;Water Shortage&quot; and &quot;Outage due to water shortage&quot; and &quot;2020-09-26T13:36:55&quot; and &quot;2020-10-27T13:36:55&quot; in database.</span>
+  
+  <span class="lead-duration duration">0.809</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_Outage-Outage-feature.html">Add and update outage and validate if the outage inserted and updated successfully.</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Outage.html">@Outage</a>
+           <a href="report-tag_Sanity.html">@Sanity</a>
+           <a href="report-tag_Regression.html">@Regression</a>
+      </div>
+
+  
+  <span class="lead-duration duration">5.704</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User should be able to update outage and validate outage updated successfully.</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User update outage with details &quot;Gas Outage&quot; and &quot;Gas Shortage&quot; and &quot;Outage due to gas leakage&quot; and &quot;2020-09-26T13:36:55&quot; and &quot;2020-10-27T13:36:55&quot; and &quot;0&quot; and &quot;3&quot; and &quot;1&quot;</span>
+  
+  <span class="lead-duration duration">0.863</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User calls &quot;AddUpdateOutage&quot; with the existing outage id and &quot;POST&quot; http request</span>
+  
+  <span class="lead-duration duration">4.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">API call got success for updating outage with status code &quot;200&quot; and &quot;Outage updated successfully&quot;</span>
+  
+  <span class="lead-duration duration">0.035</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Outage info get updated with details &quot;Gas Outage&quot; and &quot;Gas Shortage&quot; and &quot;Outage due to gas leakage&quot; and &quot;2020-09-26T13:36:55&quot; and &quot;2020-10-27T13:36:55&quot; in database.</span>
+  
+  <span class="lead-duration duration">0.801</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

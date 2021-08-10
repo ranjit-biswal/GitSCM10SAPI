@@ -1,0 +1,30 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Length: 292
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET,PUT,POST,DELETE,OPTIONS
+Access-Control-Allow-Headers: Content-Type
+Date: Tue, 10 Aug 2021 13:07:33 GMT
+
+{
+    "version": "7.5.2",
+    "status_code": 200,
+    "responsestatus": 1,
+    "request_time": "2021-08-10 01:07:34 PM",
+    "response_time": "2021-08-10 01:07:34 PM",
+    "result": {
+        "Status": 1,
+        "Message": "Outage updated successfully",
+        "Data": [
+            {
+                "Status": 1,
+                "Message": "Outage updated successfully",
+                "OutageID": 949
+            }
+        ],
+        "AttemptLeft": 0
+    }
+}
