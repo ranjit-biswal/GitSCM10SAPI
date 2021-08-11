@@ -1,0 +1,45 @@
+pipeline
+
+{
+
+agent any
+
+
+stages
+
+{
+
+stage('SanityTest')
+
+{
+
+steps
+
+{
+
+bat "mvn test verify -Dcucumber.options="--tags @"Sanity"
+
+}
+
+
+}
+
+stage('RegressionTest')
+
+{
+
+steps{
+
+bat "mvn test verify -Dcucumber.options="--tags @"Regression"
+
+}
+
+
+}
+
+
+
+}
+
+
+}
